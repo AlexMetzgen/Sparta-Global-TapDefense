@@ -1,33 +1,101 @@
 body{
-  background-color: pink;
+  background-color: #587091;
   position: relative;
 }
 main{
-  width: 600px;
-  height: 600px;
-  background-color: darkgreen;
-margin:0px auto;
+  width: 1000px;
+  height: 750px;
+
+  background-image: url(pixel-background.png);
+  background-repeat: no-repeat;
+  background-size: 1000px 750px;
+  margin:0px auto;
 }
 .Base{
-  background-color: black;
-  width: 600px;
-  height:10%;
+
+  width: 1000px;
   position: absolute;
   bottom:0px;
+  border-style: none;
+
 }
 .SpawnPoint{
-  width:30px;
-  height:30px;
-  display: inline-block;
-  position: relative;
-  background-color: red;
-  border-color: black;
-  border-width: 1px;
-  border-style: solid;
+
+  width:70px;
+  height:70px;
+  background-image: url(flying-enemy.gif);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin:0px;
+  padding: 0px;
+}
+
+.ButtonHolder{
+  text-align: center;
+  padding-top: 5%;
 }
 
 th{
-  width: 60px;
-height: 40px;
+  width: 100px;
+  height: 629px;
+  margin: 0px;
+  padding: 0px;
+
+}
+.TableContainer{
+  background-color:#634b45;
+  height: 80px;
+  background-image: url(gravestone.png);
+  background-size: 100px 90px;
+}
+#Menu{
+  background-color: white;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+#game{
+  display: none;
+}
+h1{
+  text-align: center;
+  margin-top:60px;
+  font-size: 60px;
+  margin-bottom: 0px;
+}
+button{
+  width: 70%;
+  height: 50px;
   background-color: grey;
+  margin: 6%;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+.wall{
+  background-image: url(wall.png);
+  background-size: 100px 70px;
+  width: 20%;
+  height: 70px;
+  float: left;
+
+}
+#ButtonContainer{
+  display: none;
+  width: 30%;
+  height: 20%;
+  background-color: grey;
+  margin: auto;
+  margin-top: 200px;
+  background-color: red;
+}
+
+#retry{
+/*button style for the retry button goes in here*/
 }

@@ -1,21 +1,35 @@
 var i=0;
 var spawn=0;
-var d = setInterval(spawning,2000);
+
 var lives=3;
 var elem=[];
+var score=0;
+var game=document.getElementById("game");
+var menu=document.getElementById("Menu");
+var button= document.getElementById('StartButton');
+var retryButton= document.getElementById('retry');
+var gameOverUI=document.getElementById("gameover");
+var retryButtonContainer=document.getElementById("ButtonContainer");
+var scoreDiv=document.getElementById("score");
+var d;
+var a;
 //var funcClone=myMove();
 var spawned=false;
+var spawnSpeed=400;
+var speed =15;
 
 
 
 //handles the spawning
 function spawning(){
+
   spawn++;
   spawned=true;
   //console.log(spawned);
   //console.log(elem);
   // creates a div elements and saves it in a variable
   var divr = document.createElement("div");
+
   //attaches the divr variable to the game id elements in the index.html
   //document.getElementById("game").appendChild(divr);
   //adds a class to the divr elemetns so it can be styled by the index.css
@@ -63,7 +77,7 @@ function spawning(){
   }else {
     document.getElementById("10").appendChild(divr);
   }
-
+  a = setInterval(myMove,spawnSpeed);
   //stop the spawning of the enemies when it has reached its cap
   if(spawn==10){
     clearInterval(d);
@@ -71,25 +85,27 @@ function spawning(){
   for (var i = 0; i < elem.length; i++) {
     var button=elem[i];
     //buttons[i].value=button.value;
+  }
     button.addEventListener('click',function(event){
       console.log("hit");
-  //clearInterval(id);
+      //clearInterval(id);
       this.remove();
-//myMove();
+      //myMove();
       //this.innerHTML="H";
       //this.remove();
-
-
+      score++;
+      scoreDiv.innerHTML="score: "+score;
+      console.log(score);
     });
-  }
+
 }
 
 
-  var id;
+var id;
 var destroyed =false;
 
 //handles the movement
-var a= setInterval(myMove,3000);
+
 
 function myMove(enemy) {
 
@@ -97,45 +113,73 @@ function myMove(enemy) {
     destroyed=false;
 
     var pos = 0;
-    id = setInterval(frame, 5);
+    id = setInterval(frame, speed);
     function frame() {
 
 
-if(enemy.offsetTop>=510){
-  //clearInterval(id);
-  lives--;
-    enemy.remove();
-  console.log(lives);
-}
+      if(enemy.offsetTop>=630){
+        //clearInterval(id);
+        lives--;
 
-      else if(enemy.offsetTop<=509){
-          pos++;
-          enemy.style.top = pos + 'px';
-          enemy.style.backgroundColor="black";
-          //console.log(pos);
+        enemy.remove();
+        console.log(lives);
+
+        if(lives<=0){
+          gameOver();
+
+
+        }
+
+      }
+
+      else if(enemy.offsetTop<=629){
+        pos++;
+        enemy.style.top = pos + 'px';
+        //enemy.style.backgroundColor="black";
+        //console.log(pos);
       }
     }
   }
 }
 
-if(lives==0){
-  gameOver();
-}
+
+
+
 
 
 function gameOver(){
-  
+  //gameOverUI.style.display="block";
+  console.log("Game over");
+  ButtonContainer.style.display="block";
+  clearInterval(d);
+  clearInterval(a);
+  for (var i = 0; i <elem.length; i++) {
+    elem[i].remove();
+  }
 }
 
 
-/*
-setInterval(addclick,5);
-
-//constantly updating the elem variable to check for the new spawned ones
-function addclick(){
-elem = document.getElementsByClassName("SpawnPoint");
 
 
-//need to push the new variable to the end
+button.addEventListener('click',function(event){
+  game.style.display="block";
+  menu.style.display="none";
+  console.log("button hit");
+  d = setInterval(spawning,spawnSpeed);
+
+});
+
+retry.addEventListener('click',function(event){
+  console.log("retry button pressed")
+  restart();
+});
+
+function restart(){
+lives=3;
+elem=[];
+score=0;
+spawn=0;
+d = setInterval(spawning,spawnSpeed);
+ButtonContainer.style.display="none";
+scoreDiv.innerHTML="score: "+score;
 }
-*/
