@@ -5,22 +5,18 @@ body{
 main{
   width: 1000px;
   height: 750px;
-
   background-image: url(pixel-background.png);
   background-repeat: no-repeat;
   background-size: 1000px 750px;
   margin:0px auto;
 }
 .Base{
-
   width: 1000px;
   position: absolute;
   bottom:0px;
   border-style: none;
-
 }
-.SpawnPoint{
-
+.enemy{
   width:70px;
   height:70px;
   background-image: url(flying-enemy.gif);
@@ -41,7 +37,6 @@ th{
   height: 629px;
   margin: 0px;
   padding: 0px;
-
 }
 .TableContainer{
   background-color:#634b45;
@@ -84,7 +79,6 @@ button{
   width: 20%;
   height: 70px;
   float: left;
-
 }
 #ButtonContainer{
   display: none;
@@ -93,9 +87,13 @@ button{
   background-color: grey;
   margin: auto;
   margin-top: 200px;
-  background-color: red;
+  background-color: grey;
 }
-
-#retry{
-/*button style for the retry button goes in here*/
+#score{
+  font-size: 40px;
+  margin:0px;
+}
+#lives{
+  font-size: 40px;
+  margin:0px;
 }
