@@ -1,6 +1,9 @@
 body{
-  background-color: #587091;
+  height:820px;
   position: relative;
+  background-color:#7b7b7b;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 main{
   width: 1000px;
@@ -26,15 +29,13 @@ main{
   margin:0px;
   padding: 0px;
 }
-
 .ButtonHolder{
   text-align: center;
-  padding-top: 5%;
+  height: 150px;
 }
-
 th{
   width: 100px;
-  height: 629px;
+  height: 70px;
   margin: 0px;
   padding: 0px;
 }
@@ -45,7 +46,9 @@ th{
   background-size: 100px 90px;
 }
 #Menu{
-  background-color: white;
+   opacity: 0.7;
+  background-color: #fff;
+
   width: 600px;
   height: 600px;
   margin: auto;
@@ -54,24 +57,24 @@ th{
   border-width: 3px;
   border-color: black;
 }
-#game{
-  display: none;
-}
-h1{
-  text-align: center;
-  margin-top:60px;
-  font-size: 60px;
-  margin-bottom: 0px;
+.title{
+  margin: auto;
+  width: 350px;
+  height: 70px;
+  background-repeat: no-repeat;
+  margin-top:100px;
+  background-image: url(Game-title.png);
 }
 button{
-  width: 70%;
-  height: 50px;
-  background-color: grey;
-  margin: 6%;
+  width: 200px;;
+  height: 90px;
+  background-color: lightgrey;
   border-radius: 15px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 5px;
   border-color: black;
+  margin-top: 30px;
+
 }
 .wall{
   background-image: url(wall.png);
@@ -82,18 +85,39 @@ button{
 }
 #ButtonContainer{
   display: none;
-  width: 30%;
-  height: 20%;
-  background-color: grey;
   margin: auto;
+  width: 100px;
+  height: 100px;
   margin-top: 200px;
-  background-color: grey;
 }
 #score{
   font-size: 40px;
-  margin:0px;
+  margin-top:15px;
+  text-align: center;
+  font-weight: bold;
 }
 #lives{
   font-size: 40px;
-  margin:0px;
+  margin-top:15px;
+  text-align: center;
+  font-weight: bold;
+}
+.intro{
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+}
+h2{
+  text-align: center;
+  font-size:30px;
+  margin-top: 0px;
+}
+.retryText{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+.audioContainer{
+  text-align: center;
 }
