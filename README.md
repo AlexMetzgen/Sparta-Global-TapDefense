@@ -18,3 +18,6 @@ The monster  movement speed was designed for a laptop track pad which means usin
 * Make all variables local instead of having global ones.
 * Better sprites for example (same style and more variety).
 * change the game to be  play horizontal instead of vertically. This will allow for more space and access to more sprites as most of them were from the side not front on which was required for the game layout.
+
+## Author
+Alexander Metzgen
