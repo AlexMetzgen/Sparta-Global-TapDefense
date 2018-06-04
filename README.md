@@ -1,13 +1,19 @@
 # Sparta-Global-TapDefense
-This project aim was to get more familiar with using Javascript, HTML5 and CSS by creating a game with them without using canvas.
-## Instructions
-The player will have to click on the monsters to defeat them before they reach the wall at the bottom of the game.
-The player has 3 lives and the game is played till the player fails. The aim of the game is to see how far the player can reach and this is tracked by a score which is at the bottom of the screen
-The monster  movement speed was designed for a laptop track pad which means using a mouse will most likely be easier.
+This project aim was to get more familiar with using JavaScript, HTML5 and CSS3 by creating a game with without using canvas.
+
+## Description
+The player will have to click on the monsters to defeat them before they reach the wall at the bottom of the screen.
+The player has 3 lives and the game is played until the player loses all their lives. The aim of the game is to see how far the player can reach and this is tracked by a score which is at the bottom of the screen. The monsters movement speed was designed for a laptop track pad which means using a mouse will most likely be easier.
+
+## prequisites
+Created and tested in Google Chrome
+
+## Installing
+In the code tab for the game respository click the clone and download link to download a zip file of the project. Once download the zip file will need to be unzipped. To open the game the file name index.html will need to be opened.
 
 ## Built with:
-* Javascript
-* css
+* JavaScript
+* CSS3
 * HTML5
 
 ## Future features
@@ -21,3 +27,8 @@ The monster  movement speed was designed for a laptop track pad which means usin
 
 ## Author
 Alexander Metzgen
+
+## Acknowledgments
+* Osama
+* inspiration was taken from space invaders
+* Music and 2D graphics were sourced online
