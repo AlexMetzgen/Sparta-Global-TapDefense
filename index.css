@@ -1,0 +1,123 @@
+body{
+  height:820px;
+  position: relative;
+  background-color:#7b7b7b;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+main{
+  width: 1000px;
+  height: 750px;
+  background-image: url(pixel-background.png);
+  background-repeat: no-repeat;
+  background-size: 1000px 750px;
+  margin:0px auto;
+}
+.Base{
+  width: 1000px;
+  position: absolute;
+  bottom:0px;
+  border-style: none;
+}
+.enemy{
+  width:70px;
+  height:70px;
+  background-image: url(flying-enemy.gif);
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  position:absolute;
+  margin:0px;
+  padding: 0px;
+}
+.ButtonHolder{
+  text-align: center;
+  height: 150px;
+}
+th{
+  width: 100px;
+  height: 70px;
+  margin: 0px;
+  padding: 0px;
+}
+.TableContainer{
+  background-color:#634b45;
+  height: 80px;
+  background-image: url(gravestone.png);
+  background-size: 100px 90px;
+}
+#Menu{
+   opacity: 0.7;
+  background-color: #fff;
+
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: black;
+}
+.title{
+  margin: auto;
+  width: 350px;
+  height: 70px;
+  background-repeat: no-repeat;
+  margin-top:100px;
+  background-image: url(Game-title.png);
+}
+button{
+  width: 200px;;
+  height: 90px;
+  background-color: lightgrey;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  margin-top: 30px;
+
+}
+.wall{
+  background-image: url(wall.png);
+  background-size: 100px 70px;
+  width: 20%;
+  height: 70px;
+  float: left;
+}
+#ButtonContainer{
+  display: none;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin-top: 200px;
+}
+#score{
+  font-size: 40px;
+  margin-top:15px;
+  text-align: center;
+  font-weight: bold;
+}
+#lives{
+  font-size: 40px;
+  margin-top:15px;
+  text-align: center;
+  font-weight: bold;
+}
+.intro{
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  font-weight: bold;
+}
+h2{
+  text-align: center;
+  font-size:30px;
+  margin-top: 0px;
+}
+.retryText{
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0px;
+}
+.audioContainer{
+  text-align: center;
+}
